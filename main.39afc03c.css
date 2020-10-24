@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Archivo", sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #b7c9c8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 1000px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nandibus {
+  background: #c9c8c5;
+  width: 39cm;
+  height: 17.3cm;
+  border-radius: 0.3cm;
+  padding: 1.2cm;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: baseline;
+  user-select: none;
+  box-shadow: inset 0 -0.125cm 0.375cm 0.1em #c2c0bd, inset 0 0.5625em 0.5em -0.25em #b0afab, 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+.nandibus:before {
+  content: "";
+  position: absolute;
+  top: 0.125em;
+  left: 0.0625em;
+  display: block;
+  width: 100%;
+  height: 1cm;
+  border-radius: 0.3cm;
+  box-shadow: inset 0.125em 0.3125em 0.125em -0.25em #e2e1df;
+  filter: blur(0.0625em);
+}
+.nandibus .ribbon {
+  width: 100%;
+  display: flex;
+  margin-right: 4.5cm;
+  height: 1.5cm;
+}
+.nandibus .ribbon span {
+  display: block;
+  height: 1.5cm;
+  flex-grow: 1;
+  position: relative;
+  border-radius: 0.2cm;
+  background: #bdbbb8;
+  box-shadow: inset 0 0.5625em 0.5em -0.25em #b0afab, 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+.nandibus .ribbon span:before {
+  content: "";
+  position: absolute;
+  top: 0.125em;
+  left: 0.0625em;
+  display: block;
+  width: 100%;
+  height: 50%;
+  border-radius: 0.2cm;
+  box-shadow: inset 0.125em 0.3125em 0.125em -0.25em #c7c5c2;
+}
+.nandibus .ribbon h1 {
+  margin-left: 1cm;
+  margin-right: 1.5cm;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1cm;
+  letter-spacing: 0.05cm;
+  color: #464646;
+  text-shadow: 2px 2px 0 #e2e1df;
+  margin-top: 0.05cm;
+}
+.nandibus .keyboard {
+  background: #111;
+  margin-right: 1.5cm;
+  margin-top: 1cm;
+  padding: 0.3cm;
+  border-radius: 0.2cm;
+}
+.nandibus .keyboard .line {
+  display: flex;
+  margin: 0.13cm 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+.nandibus .keyboard .key {
+  color: #fff;
+  background: linear-gradient(#373737, #2f2f2f);
+  border: 0.25cm solid #282828;
+  border-top-color: #202020;
+  border-bottom-color: #3a3a3a;
+  width: 2.2cm;
+  height: 2.2cm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8cm;
+  flex-shrink: 0;
+  flex-basis: auto;
+  margin: 0 0.06cm;
+  text-shadow: 2px 2px 1px #202020;
+  cursor: pointer;
+}
+.nandibus .keyboard .key:hover {
+  background: linear-gradient(#2f2f2f, #373737);
+}
+.nandibus .keyboard .key:active {
+  border-left-color: #1e1e1e;
+  border-left-color: #1e1e1e;
+  border-top-color: #181818;
+  border-bottom-color: #232323;
+  background: #282828;
+}
+.nandibus .keyboard .key.--backspace {
+  width: 4.2cm;
+}
+.nandibus .keyboard .key.--tab {
+  width: 3cm;
+}
+.nandibus .keyboard .key.--enter {
+  width: 3.4cm;
+}
+.nandibus .keyboard .key.--capslock {
+  width: 3.6cm;
+}
+.nandibus .keyboard .key.--l-shift {
+  width: 2.8cm;
+}
+.nandibus .keyboard .key.--r-shift {
+  width: 3.6cm;
+}
+.nandibus .keyboard .key.--l-ctrl {
+  width: 3.2cm;
+}
+.nandibus .keyboard .key.--l-nandibus, .nandibus .keyboard .key.--r-nandibus {
+  width: 2.5cm;
+}
+.nandibus .keyboard .key.--alt {
+  width: 2.5cm;
+}
+.nandibus .keyboard .key.--alt-graph {
+  width: 2.5cm;
+}
+.nandibus .keyboard .key.--menu {
+  width: 2.5cm;
+}
+.nandibus .keyboard .key.--r-ctrl {
+  width: 3.2cm;
+}
+.nandibus .keyboard .key.--space {
+  width: 14.5cm;
+}
+.nandibus .keyboard .key.--esc, .nandibus .keyboard .key.--backspace, .nandibus .keyboard .key.--tab, .nandibus .keyboard .key.--enter, .nandibus .keyboard .key.--capslock, .nandibus .keyboard .key.--l-shift, .nandibus .keyboard .key.--r-shift, .nandibus .keyboard .key.--l-ctrl, .nandibus .keyboard .key.--alt, .nandibus .keyboard .key.--alt-graph, .nandibus .keyboard .key.--menu, .nandibus .keyboard .key.--r-ctrl, .nandibus .keyboard .key.--space {
+  font-size: 0.4cm;
+}
+.nandibus .keyboard .key.--l-nandibus, .nandibus .keyboard .key.--r-nandibus {
+  font-family: "Archivo Black", sans-serif;
+}
+.nandibus .keyboard .key.--enter {
+  position: relative;
+  background: linear-gradient(#373737, #343434);
+}
+.nandibus .keyboard .key.--enter .append {
+  background: linear-gradient(#343434, #2f2f2f);
+  width: 2.5cm;
+  height: 2.6cm;
+  position: absolute;
+  border: 0.25cm solid #282828;
+  border-top: none;
+  bottom: -2.6cm;
+  right: -0.25cm;
+  border-top-color: #202020;
+  border-bottom-color: #3a3a3a;
+}
+.nandibus .keyboard .key.--enter:hover {
+  background: linear-gradient(#2f2f2f, #323232);
+}
+.nandibus .keyboard .key.--enter:hover .append {
+  background: linear-gradient(#323232, #373737);
+}
+.nandibus .keyboard .key.--enter:active {
+  border-left-color: #1e1e1e;
+  border-left-color: #1e1e1e;
+  border-top-color: #181818;
+  border-bottom-color: #232323;
+  background: #282828;
+}
+.nandibus .keyboard .key.--enter:active .append {
+  border-left-color: #1e1e1e;
+  border-left-color: #1e1e1e;
+  border-top-color: #181818;
+  border-bottom-color: #232323;
+  background: #282828;
+}
+
+/*# sourceMappingURL=/main.39afc03c.css.map */
